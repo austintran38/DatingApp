@@ -12,4 +12,8 @@ public class AppUser
     public required string DisplayName { get; set; } //display name cannot be null
     
     public required string Email { get; set; } //email cannot be null
+
+    public required byte[] PasswordHash { get; set; }
+
+    public required byte[] PasswordSalt { get; set; }
 }
